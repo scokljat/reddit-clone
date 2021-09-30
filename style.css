@@ -1,0 +1,10 @@
+html {
+  box-sizing: border-box;
+}
+body {
+  background-color: rosybrown;
+}
+p {
+  font-size: 20;
+  font-weight: bold;
+}
