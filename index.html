@@ -1,42 +1,13 @@
 <html lang="en">
   <head>
     <title>reddit</title>
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <form>
-      <h1>Reddit</h1>
-      <div id="list"></div>
+    <h1>Reddit</h1>
+    <div className="list" id="list"></div>
 
-      <!--<script src="myscript.js"></script>-->
-      <script>
-        fetch("https://www.reddit.com/r/popular.json")
-          .then((response) => response.json())
-          .then((data) => {
-            console.log(data.data);
-            data.data.children.forEach((element) => console.log(element));
-
-            let a = document.getElementById("list");
-
-            let list = "<ul>";
-
-            for (let i = 0; i < data.data.children.length; i++) {
-              list +=
-                "<li>" +
-                data.data.children[i].data.subreddit +
-                "<br>" +
-                data.data.children[i].data.title +
-                "<br>" +
-                data.data.children[i].data.ups +
-                "<br>" +
-                "</li>";
-            }
-
-            list += "</ul>";
-
-            a.insertAdjacentHTML("afterend", list);
-          });
-      </script>
-    </form>
+    <script src="script.js"></script>
   </body>
 </html>

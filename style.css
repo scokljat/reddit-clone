@@ -2,11 +2,27 @@ html {
   box-sizing: border-box;
 }
 body {
-  background-color: rosybrown;
+  background-color: rgb(243, 193, 149);
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 25px;
 }
-h1{
+h1 {
   font-size: 40px;
   text-align: center;
-  
+  color: brown;
 }
+
+.listItem {
+  padding-bottom: 20px;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: brown;
+}
+
+.listItem:hover {
+  background-color: burlywood;
 }
