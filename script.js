@@ -11,7 +11,7 @@ fetch("https://www.reddit.com/r/popular.json")
     for (let i = 0; i < data.data.children.length; i++) {
       list += `<a href="${data.data.children[i].data.url}"><li class="listItem"> 
       ${data.data.children[i].data.title}<br>
-     ${data.data.children[i].data.ups} by ${data.data.children[i].data.subreddit}  ${data.data.children[i].data.num_comments} comments</li></a>`;
+     ${data.data.children[i].data.ups} by ${data.data.children[i].data.author}  ${data.data.children[i].data.num_comments} comments</li></a>`;
     }
     a.insertAdjacentHTML("afterend", list);
   });
